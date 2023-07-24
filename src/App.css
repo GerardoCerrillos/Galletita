@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
 .bg {
     display: flex;
     background-size: cover;
@@ -38,9 +45,54 @@
     color: #000000;
     background-color: white ;
     width: 20%;
-    height: 8%;
+    height: 10%;
     top: 65%;
     left: 40%;
     font-size: x-large;
     border-radius: 10px;
+}
+
+@media (max-width: 601px ){
+    .title{
+        margin-top: 20%;
+        text-align: center;
+    }
+    .editCooki{
+        height: 30%;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .editCooki>p {
+        margin-top: 20px;
+    }
+
+    .switch{
+        width: 200px;
+        margin-top: 70px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+}
+@media (max-width: 360px ){
+    
+    .title{
+        height: 120px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .editCooki{
+        width: 80%;
+        align-items: center;
+        left: 50%;
+        transform: translate(-50%);
+    }    
+
+    .switch{
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 70px;
+    }
 }
